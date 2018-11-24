@@ -2,59 +2,6 @@
    Typography
    ========================================================================== */
 
-@font-face {
-    font-family: 'RobotoDraft';
-    src: url("https://www.cssreactions.com/assets/fonts/RobotoDraft-Regular.woff?v=1.0.0") format("woff"),
-    url("https://www.cssreactions.com/assets/fonts/RobotoDraft-Regular.woff2?v=1.0.0") format("woff2"),
-    url("https://www.cssreactions.com/assets/fonts/RobotoDraft-Regular.ttf?v=1.0.0") format("truetype"),
-    url("https://www.cssreactions.com/assets/fonts/RobotoDraft-Regular.svg#RobotoDraft-Regular") format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'inconsolatamedium';
-    src: url('https://www.cssreactions.com/assets/fonts/inconsolata-webfont.woff2') format('woff2'),
-    url('https://www.cssreactions.com/assets/fonts/inconsolata-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Circo';
-    src: url("https://www.cssreactions.com/assets/fonts/Circo.woff?v=1.0.0") format("woff"),
-    url("https://www.cssreactions.com/assets/fonts/Circo.woff2?v=1.0.0") format("woff2"),
-    url("https://www.cssreactions.com/assets/fonts/Circo.ttf?v=1.0.0") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "cssr";
-    src: url('https://www.cssreactions.com/assets/fonts/icons/cssr.eot');
-    src: url('https://www.cssreactions.com/assets/fonts/icons/cssr.eot?#iefix') format('embedded-opentype'),
-    url('https://www.cssreactions.com/assets/fonts/icons/cssr.woff') format('woff'),
-    url('https://www.cssreactions.com/assets/fonts/icons/cssr.ttf') format('truetype'),
-    url('https://www.cssreactions.com/assets/fonts/icons/cssr.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'social-icons';
-    src:  url('https://www.cssreactions.com/assets/fonts/icons/social-icons.eot');
-    src:  url('https://www.cssreactions.com/assets/fonts/icons/social-icons.eot?#iefix') format('embedded-opentype'),
-    url('https://www.cssreactions.com/assets/fonts/icons/social-icons.ttf') format('truetype'),
-    url('https://www.cssreactions.com/assets/fonts/icons/social-icons.woff') format('woff'),
-    url('https://www.cssreactions.com/assets/fonts/icons/social-icons.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* =========================================================
-   general
-   ========================================================= */
-
 h1 {
     font-size: 32px;
 }
@@ -82,9 +29,4 @@ li,
 span,
 figcaption {
     position: relative;
-}
-
-p {
-    display: inline-block !important;
-    width: 100%;
 }
