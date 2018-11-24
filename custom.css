@@ -47,7 +47,7 @@ body {
   column-count: 3;
 }
 
-.modernizr-list li{color:var(--color-green}
+.modernizr-list li{color:var(--color-green); }
 .no-customelements li.customelements{ color: var(--color-magenta); }
 .no-eventlistener li.eventlistener{ color: var(--color-magenta); }
 .no-fetch li.fetch{ color: var(--color-magenta); }
