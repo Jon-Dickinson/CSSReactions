@@ -47,18 +47,18 @@ body {
   column-count: 3;
 }
 
-.modernizr-list li{color:green}
-.no-customelements li.customelements{ color: red; }
-.no-eventlistener li.eventlistener{ color: red; }
-.no-fetch li.fetch{ color: red; }
-.no-fullscreen li.fullscreen{ color: red; }
-.no-history li.history{ color: red; }
-.no-json li.json{ color: red; }
-.no-queryselector li.queryselector{ color: red; }
-.no-sharedworkers li.sharedworkers{ color: red; }
-.no-template li.template{ color: red; }
-.no-websockets li.websockets{ color: red; }
-.no-websocketsbinary li.websocketsbinary{ color: red; }
-.no-webworkers li.webworkers{ color: red; }
-.no-setclasses li.setclasses{ color: red; }
+.modernizr-list li{color:var(--color-green}
+.no-customelements li.customelements{ color: var(--color-magenta); }
+.no-eventlistener li.eventlistener{ color: var(--color-magenta); }
+.no-fetch li.fetch{ color: var(--color-magenta); }
+.no-fullscreen li.fullscreen{ color: var(--color-magenta); }
+.no-history li.history{ color: var(--color-magenta); }
+.no-json li.json{ color: var(--color-magenta); }
+.no-queryselector li.queryselector{ color: var(--color-magenta); }
+.no-sharedworkers li.sharedworkers{ color: var(--color-magenta); }
+.no-template li.template{ color: var(--color-magenta); }
+.no-websockets li.websockets{ color: var(--color-magenta); }
+.no-websocketsbinary li.websocketsbinary{ color: var(--color-magenta); }
+.no-webworkers li.webworkers{ color: var(--color-magenta); }
+.no-setclasses li.setclasses{ color: var(--color-magenta); }
 
