@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BEM object orientated content dependant - custom classes
+   BEM - custom classes
    ========================================================================== */
 
 body {
@@ -33,81 +33,28 @@ body {
     background-color: #00447e !important;
 }
 
-.swatch {
-    position: relative;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin: 0;
-    z-index: 5;
-    width: 100%;
-    max-width: 350px;
-}
-
-.swatch__panel {
-    position: relative;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-flex: 1 1 100%;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-    height: 30px;
-    margin: 0;
-    z-index: 10;
-    transition: all 0.2s linear;
-}
-
-.swatch__panel--bg-color-1 {
-    background-color: #1193FF;
-}
-
-.swatch__panel--bg-color-2 {
-    background-color: #00c176;
-}
-
-.swatch__panel--bg-color-3 {
-    background-color: #ff2a76;
-}
-
-.swatch__panel--bg-color-4 {
-    background-color: #F2A30F;
-}
-
-.swatch__panel--bg-color-5 {
-    background-color: #666666;
-}
-
-.swatch__panel--bg-color-6 {
-    background-color: #b8b8b8;
-}
-
-.swatch__panel--bg-color-7 {
-    background-color: #e3e3e3;
-}
-
-.swatch__panel--bg-color-8 {
-    background-color: #ededed;
-}
-
 /* =========================================================
-   Links
+   feature detection
    ========================================================= */
 
-.linkedin-link {
-    position: relative;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 30px;
-    height: 30px;
+.modernizr-list {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
 }
 
-.git-link {
-    position: relative;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 30px;
-    height: 30px;
-}
+.modernizr-list li{color:green}
+.no-customelements li.customelements{ color: red; }
+.no-eventlistener li.eventlistener{ color: red; }
+.no-fetch li.fetch{ color: red; }
+.no-fullscreen li.fullscreen{ color: red; }
+.no-history li.history{ color: red; }
+.no-json li.json{ color: red; }
+.no-queryselector li.queryselector{ color: red; }
+.no-sharedworkers li.sharedworkers{ color: red; }
+.no-template li.template{ color: red; }
+.no-websockets li.websockets{ color: red; }
+.no-websocketsbinary li.websocketsbinary{ color: red; }
+.no-webworkers li.webworkers{ color: red; }
+.no-setclasses li.setclasses{ color: red; }
+
