@@ -3123,6 +3123,22 @@ button.input-solid {
 
 }
 
+@media screen and (max-height: 768px) {
+
+   .h--382vh {
+      height: 100% !important;
+   }
+
+   .h-50vh {
+      height: 100% !important;
+   }
+
+   .h--618vh {
+      height: 100% !important;
+   }
+
+}
+
 /* =========================================================
    transform XY
    ========================================================= */
