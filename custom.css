@@ -49,7 +49,7 @@ body {
   width: 100%;
 }
 
-.modernizr-list li{color:var(--color-green); font-size: 14px; }
+.modernizr-list li{color:var(--color-green); font-size: 13px; }
 .no-customelements li.customelements{ color: var(--color-magenta); }
 .no-eventlistener li.eventlistener{ color: var(--color-magenta); }
 .no-fetch li.fetch{ color: var(--color-magenta); }
