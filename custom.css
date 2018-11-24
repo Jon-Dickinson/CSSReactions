@@ -43,9 +43,6 @@ body {
 
 .modernizr-list {
   position: relative;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
   width: 100%;
 }
 
@@ -63,23 +60,3 @@ body {
 .no-websocketsbinary li.websocketsbinary{ color: var(--color-magenta); }
 .no-webworkers li.webworkers{ color: var(--color-magenta); }
 .no-setclasses li.setclasses{ color: var(--color-magenta); }
-
-@media screen and (max-width: 1024px) {
-
-    .modernizr-list {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-   }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .modernizr-list {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-   }
-
-}
