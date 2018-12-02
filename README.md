@@ -10,4 +10,5 @@ orientated naming conventions.
 
 Front-end development that focuses on the structure of HTML, CSS already exists.
 
-<a href="https://www.cssreactions.com/assets/download/cssr.zip"> Download un-minified version </a>  
+<a href="https://www.cssreactions.com/assets/download/cssr.zip"> Download un-minified version </a>
+<a href="https://www.cssreactions.com/assets/download/cssr.min.zip"> Download minified version </a>
