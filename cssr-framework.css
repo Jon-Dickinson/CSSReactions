@@ -7,18 +7,18 @@
    --primary-2: #3E606F;
    --primary-3: #91AA9D;
 
-   --secondary-1: #cccccc;
+   --secondary-1: #bababa;
    --secondary-2: #dddddd;
    --secondary-3: #e8e8e8;
 
    --color-magenta: #ff2a76;
    --color-blue: #1193FF;
    --color-green: #00c176;
-   --color-yellow: #F2A30F;
+   --color-yellow: #dea52b;
 
    --color-default: #666666;
    --color-light-shade-1: #f3f3f3;
-   --color-light-shade-2: #e3e3e3;
+   --color-light-shade-2: #a3acbe;
    --color-light-shade-3: #CDD6D5;
 
    --line-height: 40px;
@@ -26,6 +26,7 @@
    --height-large: 50px;
 
    --border-radius: 21px;
+   --border-radius-small: 12px;
    --border-width: 2px;
    --input-background-color: transparent;
    --input-border-color: #ffffff;
@@ -56,7 +57,7 @@ html {
 body {
    position: relative;
    width: 100%;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'RobotoDraft', sans-serif;
    color: rgba(0, 0, 0, .68);
    font-size: 1rem;
    line-height: 1.5;
@@ -311,6 +312,76 @@ a:hover {
 }
 
 /* =================================
+   button
+   ================================= */
+
+.button-solid {
+   position: relative;
+   display: -webkit-inline-flex;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   -ms-grid-row-align: center;
+   align-items: center;
+   text-align: center;
+   cursor: pointer;
+   background-color: #ffffff;
+   border: none;
+   color: initial;
+   padding: 0 25px;
+}
+
+.button-outline {
+   position: relative;
+   display: -webkit-inline-flex;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   -ms-grid-row-align: center;
+   align-items: center;
+   text-align: center;
+   cursor: pointer;
+   background-color: transparent;
+   border: 2px solid;
+   color: initial;
+   padding: 0 25px;
+}
+
+[class*="button"] {
+   cursor: pointer;
+   line-height: var(--line-height);
+   min-height: var(--line-height);
+}
+
+.button--small {
+   min-width: 180px;
+}
+
+.button--large {
+   min-width: 220px;
+   line-height: var(--line-height-large);
+   min-height: var(--line-height-large);
+}
+
+button.button-outline,
+button.button-solid {
+   cursor: pointer;
+}
+
+[type="submit"].button-outline,
+[type="submit"].button-solid {
+   cursor: pointer;
+}
+
+/* =================================
    - input
    ================================= */
 
@@ -372,42 +443,38 @@ a:hover {
    border: 2px solid var(--color-magenta) !important;
 }
 
-button.input-outline,
-button.input-solid {
-   cursor: pointer;
-}
-
-[type="submit"].input-outline,
-[type="submit"].input-solid {
-   cursor: pointer;
-}
-
 /* pseudo-radio-button */
 
 .pseudo-radio-button {
-   display: inline-block;
-   float: left;
    position: relative;
+   display: -webkit-inline-flex;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
    width: 100%;
 }
 
 .pseudo-radio-button input[type=radio] {
+   /*opacity: 0;*/
    display:none;
 }
 
 .pseudo-radio-button__label {
-   cursor: pointer;
-   display: inline-block;
-   float: right;
-   padding-left: 38px;
-   padding-top: 2px;
    position: relative;
+   display: -webkit-inline-flex;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   min-height: var(--line-height);
+   height: var(--line-height);
+   line-height: var(--line-height);
+   padding-left: 40px;
+   cursor: pointer;
    -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    user-select: none;
    width: 100%;
    z-index: 10;
+   margin: 0;
 }
 
 .pseudo-radio-button .radio-disc {
@@ -415,13 +482,12 @@ button.input-solid {
    border-radius: 50%;
    display: inline-block;
    height: 20px;
+   top: 50%;
    left: 10px;
    margin: 0;
    overflow: hidden;
    position: absolute;
-   top: 50%;
-   -ms-transform: translate(-50%,-50%);
-   transform: translate(-50%,-50%);
+   transform: translate(-50%, -50%);
    width: 20px;
    z-index: 5;
 }
@@ -434,7 +500,6 @@ button.input-solid {
    margin: auto;
    position: absolute;
    top: 50%;
-   -ms-transform: translate(-50%,-50%);
    transform: translate(-50%,-50%);
    width: 12px;
 }
@@ -447,43 +512,45 @@ button.input-solid {
 /* pseudo-checkbox */
 
 .pseudo-checkbox {
-   -ms-flex-align: center;
-   align-items: center;
+   position: relative;
+   display: -webkit-inline-flex;
    display: -ms-inline-flexbox;
    display: inline-flex;
-   padding-bottom: 10px;
-   padding-top: 10px;
-   position: relative;
    width: 100%;
+   min-height: var(--line-height);
+   height: var(--line-height);
+   line-height: var(--line-height);
 }
 
 .pseudo-checkbox input[type=checkbox] {
+   /*opacity: 0;*/
    display: none;
 }
 
 .pseudo-checkbox input[type=checkbox] + label {
-   -ms-flex-align: center;
-   align-items: center;
+   position: relative;
+   display: -webkit-inline-flex;
    display: -ms-inline-flexbox;
    display: inline-flex;
-   -ms-flex-direction: row;
-   flex-direction: row;
    margin: 0;
-   position: relative;
+   padding-left: 20px;
 }
 
 .pseudo-checkbox input[type=checkbox] + label:before {
+   position: absolute;
    border: 2px solid #ffffff;
    background-color: transparent;
    content: "";
    cursor: pointer;
    display: inline-block;
    height: 20px;
-   left: 0;
    min-height: 20px;
    min-width: 20px;
-   position: relative;
    width: 20px;
+   left: 10px;
+   top: 50%;
+   -ms-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%)
 }
 
 .pseudo-checkbox input[type=checkbox]:checked + label:before {
@@ -680,69 +747,9 @@ button.input-solid {
    background-color: var(--color-magenta);
 }
 
-/* =================================
-   button
-   ================================= */
-
-.button-solid {
-   position: relative;
-   display: -webkit-inline-flex;
-   display: -ms-inline-flexbox;
-   display: inline-flex;
-   -webkit-justify-content: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   -ms-flex-align: center;
-   -ms-grid-row-align: center;
-   align-items: center;
-   text-align: center;
-   cursor: pointer;
-   background-color: #ffffff;
-   border: none;
-   color: initial;
-   padding: 0 25px;
-}
-
-.button-outline {
-   position: relative;
-   display: -webkit-inline-flex;
-   display: -ms-inline-flexbox;
-   display: inline-flex;
-   -webkit-justify-content: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   -ms-flex-align: center;
-   -ms-grid-row-align: center;
-   align-items: center;
-   text-align: center;
-   cursor: pointer;
-   background-color: transparent;
-   border: 2px solid;
-   color: initial;
-   padding: 0 25px;
-}
-
-/* ==========================================================================
-   modifiers
-   ========================================================================== */
-
-[class*="button"] {
-   cursor: pointer;
-   line-height: var(--line-height);
-   min-height: var(--line-height);
-}
-
-.button--small {
-   min-width: 160px;
-}
-
-.button--large {
-   min-width: 200px;
-   line-height: var(--line-height-large);
-   min-height: var(--line-height-large);
-}
+/* ========================================================
+   object fit
+   ======================================================== */
 
 .object-fit--cover {
    object-fit: cover;
@@ -1844,6 +1851,7 @@ button.input-solid {
    background-color: transparent !important;
 }
 
+
 .bg-white-opacity-025 {
    background-color: rgba(255,255,255,0.25);
 }
@@ -1855,6 +1863,11 @@ button.input-solid {
 .bg-white-opacity-005 {
    background-color: rgba(255, 255, 255, 0.05) !important;
 }
+
+.bg-white-opacity-01 {
+   background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 
 .bg-black-opacity-025 {
    background-color: rgba(0,0,0,0.25);
@@ -1873,7 +1886,7 @@ button.input-solid {
    ========================================================= */
 
 .border-1px-silver {
-   border: 1px solid #e2e2e2 !important;
+   border: 1px solid #cdcdcd !important;
 }
 
 .border-1px-white {
@@ -1883,6 +1896,7 @@ button.input-solid {
 .border-2px-white {
    border: 2px solid #ffffff !important;
 }
+
 
 .border-t-2px-white {
    border-top: 2px solid white !important;
@@ -2110,6 +2124,26 @@ button.input-solid {
    border-radius: var(--border-radius);
 }
 
+.border-r-tl-small {
+   border-top-left-radius: var(--border-radius-small);
+}
+
+.border-r-tr-small {
+   border-top-right-radius: var(--border-radius-small);
+}
+
+.border-r-bl-small {
+   border-bottom-left-radius: var(--border-radius-small);
+}
+
+.border-r-br-small {
+   border-bottom-right-radius: var(--border-radius-small);
+}
+
+.border-r--small {
+   border-radius: var(--border-radius-small);
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -2171,12 +2205,30 @@ button.input-solid {
 
 /* color */
 
+[hover-parent__color-blue]:hover {
+   color: var(--color-blue) !important;
+}
+
+[hover-parent__color-blue]:hover * {
+   color: var(--color-blue) !important;
+}
+
 [hover-parent__color-ffffff]:hover {
    color: #ffffff !important;
 }
 
 [hover-child__color-ffffff]:hover * {
    color: #ffffff !important;
+}
+
+/* border color */
+
+[hover-parent__b-color-blue]:hover {
+   border-color: var(--color-blue) !important;
+}
+
+[hover-parent__b-color-ffffff]:hover {
+   border-color: #ffffff !important;
 }
 
 /* =========================================================
@@ -2289,6 +2341,10 @@ button.input-solid {
 
 .margin-t-100 {
    margin-top: 100px !important;
+}
+
+.margin-t-120 {
+   margin-top: 120px !important;
 }
 
 .margin-t-150 {
@@ -2409,6 +2465,10 @@ button.input-solid {
    margin-left: 30px !important;
 }
 
+.margin-l-40 {
+   margin-left: 40px !important;
+}
+
 .margin-l-0 {
    margin-left: 0 !important;
 }
@@ -2484,6 +2544,10 @@ button.input-solid {
 
    .margin-t-10--under-1024 {
       margin-top: 10px !important;
+   }
+
+   .margin-t-0--under-1024 {
+      margin-top: 0 !important;
    }
 
    .margin-t-20--under-1024 {
@@ -2794,6 +2858,10 @@ button.input-solid {
    padding-bottom: 0 !important;
 }
 
+.no-padding {
+   padding: 0 !important;
+}
+
 @media screen and (max-width: 1024px) {
 
    .padding-t-20--under-1024 {
@@ -2945,6 +3013,14 @@ button.input-solid {
    max-width: 70px !important;
 }
 
+.max-w-80p {
+   max-width: 80px !important;
+}
+
+.max-w-90p {
+   max-width: 90px !important;
+}
+
 .max-w-100p {
    max-width: 100px !important;
 }
@@ -3019,12 +3095,32 @@ button.input-solid {
 
 /* min-width px */
 
+.min-w-40p {
+   min-width: 40px !important;
+}
+
 .min-w-80 {
    min-width: 80px !important;
 }
 
 .min-w-150p {
    min-width: 150px !important;
+}
+
+.min-w-160p {
+   min-width: 160px !important;
+}
+
+.min-w-180p {
+   min-width: 180px !important;
+}
+
+.min-w-200p {
+   min-width: 200px !important;
+}
+
+.min-w-220p {
+   min-width: 220px !important;
 }
 
 .min-w-300p {
@@ -3108,22 +3204,6 @@ button.input-solid {
 }
 
 @media screen and (max-width: 768px) {
-
-   .h--382vh {
-      height: 100% !important;
-   }
-
-   .h-50vh {
-      height: 100% !important;
-   }
-
-   .h--618vh {
-      height: 100% !important;
-   }
-
-}
-
-@media screen and (max-height: 768px) {
 
    .h--382vh {
       height: 100% !important;
