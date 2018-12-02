@@ -1,0 +1,27 @@
+/* ==========================================================================
+   BEM - custom classes
+   ========================================================================== */
+
+.main-heading {
+    font-family: 'Circo', sans-serif;
+    font-size: 2.75em;
+    line-height: 1;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .main-heading {
+        font-size: 1.325rem;
+        line-height: 1.5;
+    }
+
+}
+
+.bg-cssr-brand-blue {
+    background-color: #00447e !important;
+}
+
+.color--cssr-brand-blue {
+    color: #00447e !important;
+}

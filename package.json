@@ -1,0 +1,19 @@
+{
+  "name": "cssreactions",
+  "version": "0.8.0",
+  "description": "Modular utility based CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jon-Dickinson/CSSReactions.git"
+  },
+  "author": "Jonathan Dickinson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jon-Dickinson/CSSReactions/issues"
+  },
+  "homepage": "https://github.com/Jon-Dickinson/CSSReactions#readme"
+}
