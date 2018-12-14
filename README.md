@@ -1,7 +1,4 @@
-## CSSReactions
-
 ![](https://github.com/Jon-Dickinson/CSSReactions/blob/master/assets/images/screenshot-1.jpg?raw=true)
-
 
 https://www.cssreactions.com/
 
